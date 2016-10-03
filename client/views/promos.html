@@ -1,0 +1,58 @@
+<div>
+  <div class="media container">
+    <div class="row row-header-content">
+      <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+        <div class="col-sm-6 col-xs-12 col-lg-6 no-padding">
+          <label for="category" class="label-header col-sm-2 col-xs-4 col-lg-2">Category</label>
+          <div class="col-sm-4  col-xs-8 col-lg-4 no-padding">
+            <select class="form-control" id="category" name="category" ng-model="category" ng-init="category = category || categories[0].value" ng-options="category.value as category.label for category in categories"></select>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 col-lg-6 no-padding">
+          <label for="sortby" class="label-header label-right col-sm-2  col-xs-4 col-lg-2 col-sm-offset-5">SortBy</label>
+          <div class="col-sm-4  col-xs-8 col-lg-4 no-padding">
+            <select class="form-control" id="sortby" name="sortby" ng-model="sortParam" ng-init="sortParam = sortParam || sortParams[0].value" ng-options="sortParam.value as sortParam.label for sortParam in sortParams"></select>
+          </div>
+        </div>
+      </div>
+      <div ng-if="!showPromos">
+        <br></br>
+        <h3>{{message}}</h3>
+      </div>
+    </div>
+  </div>
+  <ul class="media-list">
+    <li class="media container" dir-paginate="promo in promos | filter:{category:category, title:searchTerm} | orderBy:sortParam | itemsPerPage: 6">
+      <div class="row row-content">
+        <div class="media-right pull-right">
+          <a style="cursor:pointer;" ng-if="promo.image">
+            <img class="media-object img-thumbnail img-center" ng-src={{promo.image}} ng-click="redirecturl(promo.url)">
+          </a>
+          <span class="align-center">{{promo.price | currency}}</span>
+          <div ng-if="promo.url" class="align-center">
+            <a class="btn btn-success" ng-click="redirecturl(promo.url)">go to promo</a>
+          </div>
+        </div>
+        <div class="media-body">
+          <a class="icon-details" ui-sref="app.promodetails({id: promo.id})">
+            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <span>{{getRating(promo)}}</span>
+          </a>
+          <a class="icon-details" ui-sref="app.promodetails({id: promo.id})">
+            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <span>{{getSumComments(promo)}}</span>
+          </a>
+          <span>{{promo.category}}</span>
+          <span>{{promo.type}}</span>
+          <p> posted by: {{promo.user.username}} at {{promo.createdAt | date: 'dd.MM.yyyy, HH:mm:ss'}}</p>
+          <a ui-sref="app.promodetails({id: promo.id})">
+            <h2 class="media-heading">{{promo.title | limitTo: 75}}{{promo.title.length > 75 ? '...' : ''}}</h2>
+          </a>
+          <pre class="pre-short">{{promo.description}}</pre>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="mini-nav align-center" ng-controller="PaginationController">
+    <dir-pagination-controls on-page-change="pageChanged()"></dir-pagination-controls>
+  </div>
+</div>
+

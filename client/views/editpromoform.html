@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row row-content">
+    <div class="col-xs-12">
+      <h3>Edit promo</h3>
+      <div ng-if="!showForm">
+        <h3>{{message}}</h3>
+      </div>
+    </div>
+    <div ng-class="showForm?'visible':'invisible'" class="col-xs-12 col-sm-12">
+      <form class="form-horizontal" name="editPromoForm" ng-submit="editPromo()">
+        <div class="form-group" ng-class="{ 'has-error' : editPromoForm.title.$error.required && !editPromoForm.title.$pristine }">
+          <label for="title" class="col-sm-2 control-label">Title</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title" ng-model="promo.title" required>
+            <span ng-show="editPromoForm.title.$error.required && !editPromoForm.title.$pristine" class="help-block">Promo title is required.</span>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editPromoForm.description.$error.required && !editPromoForm.description.$pristine }">
+          <label for="description" class="col-sm-2 control-label">Description</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="description" name="description" rows="12" ng-model="promo.description" required></textarea>
+            <span ng-show="editPromoForm.description.$error.required && !editPromoForm.description.$pristine" class="help-block">Promo description is required.</span>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editPromoForm.category.$error.required && !editPromoForm.category.$pristine }">
+          <label for="category" class="col-sm-2 control-label">Category</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="category" name="category" ng-model="promo.category" ng-options="category.value as category.label for category in categories.slice(1,categories.length)" required>
+              <option value="">-select categories-</option>
+            </select>
+            <span ng-show="editPromoForm.category.$error.required && !editPromoForm.category.$pristine" class="help-block">Promo category is required.</span>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editPromoForm.type.$error.required && !editPromoForm.type.$pristine }">
+          <label for="type" class="col-sm-2 control-label">Type</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="type" name="type" ng-model="promo.type" ng-options="type.value as type.label for type in types" required>
+              <option value="">-select types-</option>
+            </select>
+            <span ng-show="editPromoForm.type.$error.required && !editPromoForm.type.$pristine" class="help-block">Promo type is required.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="price" class="col-sm-2 control-label">Price</label>
+          <div class="col-sm-10">
+            <input type="number" step="0.01" class="form-control" id="price" name="price" placeholder="Enter price" ng-model="promo.price">
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editPromoForm.url.$error.required && !editPromoForm.url.$pristine }">
+          <label for="url" class="col-sm-2 control-label">Url</label>
+          <div class="col-sm-10">
+            <input type="url" class="form-control" id="url" name="url" placeholder="Enter Url" ng-model="promo.url">
+            <span ng-show="!editPromoForm.url.$pristine" class="help-block">Promo url should be started with protocol name e.g. http, https.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="image" class="col-sm-2 control-label">Image</label>
+          <div class="col-sm-10">
+            <input id="input" type="file" style="padding-top:6px" id="image" name="image" onchange="angular.element(this).scope().handleFiles()">
+            <br>
+            <img src="" id="currentimage">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

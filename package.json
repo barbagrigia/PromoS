@@ -1,0 +1,28 @@
+{
+  "name": "PromoS",
+  "description": "application to share promo",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Vladimir Trukhin",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-component-storage": "^1.7.0",
+    "loopback-connector-cloudant": "^1.0.9",
+    "loopback-datasource-juggler": "^2.39.0",
+    "loopback-ds-timestamp-mixin": "^3.2.2",
+    "passport": "^0.3.2",
+    "serve-favicon": "^2.0.1"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "license": "Apache-2.0"
+}
