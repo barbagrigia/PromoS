@@ -29,6 +29,7 @@
 <!--  [![Greenkeeper badge](https://badges.greenkeeper.io/barbagrigia/PromoS.svg)](https://greenkeeper.io/) -->
 </div>
 
+---
 
 Install: ```npm install```
 
