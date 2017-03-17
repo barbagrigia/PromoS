@@ -30,8 +30,6 @@
 </div>
 
 
-Install: ```sh npm install ```
-Run:
-```sh
-npm start
-```
+Install: ```npm install```
+
+Run: ```npm start```
