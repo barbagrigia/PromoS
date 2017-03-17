@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Vladimir Trukhin",
   "dependencies": {
@@ -20,10 +22,12 @@
     "loopback-ds-timestamp-mixin": "^3.2.2",
     "passport": "^0.3.2",
     "serve-favicon": "^2.0.1",
-    "coveralls": "^2.12.0"
+    "coveralls": "^2.12.0",
+    "snyk": "^1.25.2"
   },
   "engines": {
     "node": "0.12.x"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "snyk": true
 }

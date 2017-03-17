@@ -1,0 +1,15 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - loopback-component-storage > pkgcloud > request > hawk:
+        patched: '2017-03-17T21:04:54.121Z'
+    - loopback-connector-cloudant > cloudant > cloudant-nano > follow > request > hawk:
+        patched: '2017-03-17T21:04:54.121Z'
+  'npm:request:20160119':
+    - loopback-component-storage > pkgcloud > request:
+        patched: '2017-03-17T21:04:54.121Z'
+    - loopback-connector-cloudant > cloudant > cloudant-nano > follow > request:
+        patched: '2017-03-17T21:04:54.121Z'
