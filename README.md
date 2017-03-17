@@ -22,6 +22,11 @@
   <a href="https://coveralls.io/r/barbagrigia/PromoS">
     <img src="https://coveralls.io/repos/github/barbagrigia/PromoS/badge.svg" alt="Test Coverage" />
   </a>
+  <!-- Dependency Status - Greenkeeper badge -->
+  <a href="https://greenkeeper.io">
+    <img src="https://badges.greenkeeper.io/barbagrigia/PromoS.svg" alt="Dependency Status" />
+  </a>
+<!--  [![Greenkeeper badge](https://badges.greenkeeper.io/barbagrigia/PromoS.svg)](https://greenkeeper.io/) -->
 </div>
 
 install:
