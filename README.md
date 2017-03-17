@@ -1,6 +1,7 @@
 <br />
 
 <div align="center"><strong>PromoS</strong></div>
+<div align="center">Application to share promo</div>
 
 <br />
 
