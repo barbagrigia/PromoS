@@ -29,8 +29,12 @@
 <!--  [![Greenkeeper badge](https://badges.greenkeeper.io/barbagrigia/PromoS.svg)](https://greenkeeper.io/) -->
 </div>
 
-install:
-npm install
 
-run:
+Install:
+```sh
+npm install
+```
+Run:
+```sh
 npm start
+```
