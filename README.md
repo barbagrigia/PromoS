@@ -16,7 +16,7 @@
   </a>
   <!-- Build Status -->
   <a href="https://travis-ci.org/barbagrigia/PromoS">
-    <img src="https://travis-ci.org/barbagrigia/PromoS.svg" alt="Build Status" />
+    <img src="https://travis-ci.org/barbagrigia/PromoS.svg?branch=master" alt="Build Status" />
   </a>
   <!-- Test Coverage -->
   <a href="https://coveralls.io/r/barbagrigia/PromoS">
