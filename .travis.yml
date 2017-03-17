@@ -1,0 +1,11 @@
+# .travis.yml
+language: node_js
+
+node_js:
+  - '0.12'
+  - '4'
+  - '6'
+  - stable
+
+notifications:
+  email: false
