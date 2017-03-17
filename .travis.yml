@@ -8,4 +8,7 @@ node_js:
   - stable
 
 notifications:
-  email: false
+  email:
+    on_failure: change
+
+after_success: 'npm run coveralls'
