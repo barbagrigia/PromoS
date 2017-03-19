@@ -8,19 +8,19 @@
 <div align="center">
   <!-- Dependency Status -->
   <a href="https://david-dm.org/barbagrigia/PromoS">
-    <img src="https://david-dm.org/barbagrigia/PromoS.svg" alt="Dependency Status" />
+    <img src="https://img.shields.io/david/barbagrigia/PromoS.svg" alt="Dependency Status" />
   </a>
   <!-- devDependency Status -->
   <a href="https://david-dm.org/barbagrigia/PromoS#info=devDependencies">
-    <img src="https://david-dm.org/barbagrigia/PromoS/dev-status.svg" alt="devDependency Status" />
+    <img src="https://img.shields.io/david/dev/barbagrigia/PromoS.svg" alt="devDependency Status" />
   </a>
   <!-- Build Status -->
   <a href="https://travis-ci.org/barbagrigia/PromoS">
-    <img src="https://travis-ci.org/barbagrigia/PromoS.svg?branch=master" alt="Build Status" />
+    <img src="https://img.shields.io/travis/barbagrigia/PromoS/master.svg" alt="Build Status" />
   </a>
   <!-- Test Coverage -->
   <a href="https://coveralls.io/r/barbagrigia/PromoS">
-    <img src="https://coveralls.io/repos/github/barbagrigia/PromoS/badge.svg" alt="Test Coverage" />
+    <img src="https://img.shields.io/coveralls/barbagrigia/PromoS.svg" alt="Test Coverage" />
   </a>
   <!-- Dependency Status - Greenkeeper badge -->
   <a href="https://greenkeeper.io">
