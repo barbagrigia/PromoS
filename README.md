@@ -29,7 +29,7 @@
 <!--  [![Greenkeeper badge](https://badges.greenkeeper.io/barbagrigia/PromoS.svg)](https://greenkeeper.io/) -->
   <!-- Known Vulnerabilities -->
   <a href="https://snyk.io/test/github/barbagrigia/PromoS">
-    <img src="https://img.shields.io/snyk/vuln/barbagrigia/PromoS.svg" alt="Known Vulnerabilities" />
+    <img src="https://snyk.io/test/github/barbagrigia/PromoS/badge.svg" alt="Known Vulnerabilities" />
   </a>
 <!-- [![Known Vulnerabilities](https://snyk.io/test/github/barbagrigia/PromoS/badge.svg)](https://snyk.io/test/github/barbagrigia/PromoS) -->
 
