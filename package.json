@@ -1,10 +1,13 @@
 {
   "name": "PromoS",
-  "description": "application to share promo",
+  "description": "Application to Share Promo",
   "version": "1.0.0",
+  "author": "Vladimir Trukhin",
+  "license": "Apache-2.0",
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
+    "test": "standard",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
@@ -23,12 +26,22 @@
     "loopback-ds-timestamp-mixin": "^3.2.2",
     "passport": "^0.3.2",
     "serve-favicon": "^2.0.1",
-    "coveralls": "^2.12.0",
     "snyk": "^1.25.2"
+  },
+  "devDependencies": {
+    "standard": "^9.0.2",
+    "coveralls": "^2.12.0"
   },
   "engines": {
     "node": "0.12.x"
   },
-  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barbagrigia/PromoS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barbagrigia/PromoS/issues"
+  },
+  "homepage": "https://github.com/barbagrigia/PromoS",
   "snyk": true
 }
