@@ -37,13 +37,13 @@
 
 ---
 
-## Install
+## Installation
 
 ```sh
 npm install
 ```
 
-## Run
+## Usage
 
 ```sh
 npm start
