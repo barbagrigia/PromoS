@@ -37,9 +37,17 @@
 
 ---
 
-Install: ```npm install```
+## Install
 
-Run: ```npm start```
+```sh
+npm install
+```
+
+## Run
+
+```sh
+npm start
+```
 
 ## License
 
