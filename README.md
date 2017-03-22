@@ -40,3 +40,7 @@
 Install: ```npm install```
 
 Run: ```npm start```
+
+## License
+
+The code is available under the [Apache License 2.0](LICENSE).
