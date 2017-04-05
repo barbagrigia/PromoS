@@ -27,7 +27,7 @@
     "snyk": "^1.25.2"
   },
   "devDependencies": {
-    "standard": "^9.0.2",
+    "standard": "^10.0.0",
     "coveralls": "^2.12.0"
   },
   "engines": {
