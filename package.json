@@ -16,7 +16,7 @@
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "loopback": "^3.4.0",
-    "loopback-boot": "^2.6.5",
+    "loopback-boot": "^3.0.0",
     "loopback-component-explorer": "^5.0.0",
     "loopback-component-storage": "^3.2.0",
     "loopback-connector-cloudant": "^2.0.2",
