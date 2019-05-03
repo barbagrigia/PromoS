@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.13.3
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -18,3 +18,11 @@ patch:
         patched: '2017-05-26T04:10:07.764Z'
     - loopback-connector-cloudant > cloudant > debug > ms:
         patched: '2017-05-26T04:10:07.764Z'
+    - loopback-component-storage > pkgcloud > liboneandone > mocha > debug > ms:
+        patched: '2019-05-03T05:26:51.424Z'
+  'npm:debug:20170905':
+    - loopback-component-storage > pkgcloud > liboneandone > mocha > debug:
+        patched: '2019-05-03T05:26:51.424Z'
+  'npm:minimatch:20160620':
+    - loopback-component-storage > pkgcloud > liboneandone > mocha > glob > minimatch:
+        patched: '2019-05-03T05:26:51.424Z'
