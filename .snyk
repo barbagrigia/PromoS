@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.13.5
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -18,3 +18,26 @@ patch:
         patched: '2017-05-26T04:10:07.764Z'
     - loopback-connector-cloudant > cloudant > debug > ms:
         patched: '2017-05-26T04:10:07.764Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > gcs-resumable-upload > google-auth-library > gaxios > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > teeny-request > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > gcs-resumable-upload > google-auth-library > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > @google-cloud/common > google-auth-library > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > gcs-resumable-upload > gaxios > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > @google-cloud/common > teeny-request > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > @google-cloud/common > google-auth-library > gaxios > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > gcs-resumable-upload > google-auth-library > gcp-metadata > gaxios > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > gcs-resumable-upload > google-auth-library > gtoken > gaxios > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > @google-cloud/common > google-auth-library > gtoken > gaxios > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
+    - loopback-component-storage > pkgcloud > @google-cloud/storage > @google-cloud/common > google-auth-library > gcp-metadata > gaxios > https-proxy-agent:
+        patched: '2019-10-04T05:19:28.598Z'
