@@ -20,7 +20,7 @@
     "loopback-component-explorer": "^5.0.0",
     "loopback-component-storage": "^3.2.0",
     "loopback-connector-cloudant": "^2.0.2",
-    "loopback-datasource-juggler": "^3.2.0",
+    "loopback-datasource-juggler": "^4.17.0",
     "loopback-ds-timestamp-mixin": "^3.2.2",
     "passport": "^0.4.0",
     "serve-favicon": "^2.0.1",
