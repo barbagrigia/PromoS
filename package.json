@@ -22,7 +22,7 @@
     "loopback-connector-cloudant": "^2.0.2",
     "loopback-datasource-juggler": "^3.2.0",
     "loopback-ds-timestamp-mixin": "^3.2.2",
-    "passport": "^0.4.0",
+    "passport": "^0.6.0",
     "serve-favicon": "^2.0.1",
     "snyk": "^1.30.1"
   },
